@@ -1,0 +1,116 @@
+.header{
+    &__section{
+        background-image:url("JPG/home4.jpg");
+        height: 370px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: header-section;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__heading{
+        margin: 40px;
+        color: rgba(7, 15, 105, 0.877);
+        justify-content: center;
+    }
+
+    &__para{
+        margin: 10px;
+        color: rgba(100, 11, 66, 0.877);
+        justify-content: center;
+    }
+
+    &__line{
+        width: 200px;
+        background-color: blue;
+        height: 5px;
+    }
+
+    &__pictures{
+        background-color:rgb(197, 169, 169);
+        height: 280px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        grid-area: header-section;
+
+        & a:hover{
+            text-decoration: none;
+            & p{
+                color:red;}
+        }
+        
+        & img{
+            height: 200px;
+            width: 240px;
+            border: 1px;
+            float: left;
+        }
+
+        & p{
+            border: 1px solid #7a1e1ecc;
+            box-shadow: 0 4px 8px 0 #7a1e1ecc;
+            color:rgba(7, 8, 8, 0.966);
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+     }
+}
+
+.section{
+    &__wine, &__beer, &__spirits{
+        background-color: #F0F0F0;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__wine-heading, &__beer-heading, &__spirits-heading{
+        color: #961212be;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    &__wine-row, &__beer-row, &__spirits-row{
+        padding: 20px;
+    }
+
+    &__wine-col, &__beer-col, &__spirits-col{
+        & img{
+            height: 180px;
+            width: 153px;
+        }
+
+        & p{
+            box-shadow: 0 1px 2px 0 #7a1e1ecc;
+            color:rgba(7, 8, 8, 0.966);
+            font-family:cursive;
+            text-align: center;
+            background-color: rgb(187, 226, 182);
+            line-height: 2;
+        }
+       
+    }
+
+    &__beer--background{
+            background-color:rgb(250, 247, 241);
+    }
+    &__spirits--background{
+        background-color:rgb(234, 238, 172)
+    }
+    
+    &__wine-price, &__beer-price, &__spirits-price{
+        text-align: center;
+        font-weight: bolder;
+        font-size: larger;
+        margin-top: -40px;
+        color:rgba(197, 16, 3, 0.877);
+    }
+
+}
+
